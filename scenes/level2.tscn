@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dvimwilbnp0f1"]
+[gd_scene load_steps=10 format=3 uid="uid://dvimwilbnp0f1"]
 
 [ext_resource type="Script" path="res://scenes/game_manager.gd" id="1_ypiv7"]
 [ext_resource type="Texture2D" uid="uid://cfvh2nuyr811w" path="res://9259351.jpg" id="2_vhulr"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cdk1w7pbuac8n" path="res://scenes/main_character.tscn" id="4_8kdj5"]
 [ext_resource type="PackedScene" uid="uid://dkbuv4xdhbalt" path="res://scenes/collectibles.tscn" id="5_3ogct"]
 [ext_resource type="PackedScene" uid="uid://emtc4vqpixm7" path="res://scenes/finish.tscn" id="6_e4hsv"]
+[ext_resource type="PackedScene" uid="uid://2ao3n02jnopy" path="res://scenes/main_menu.tscn" id="7_68pk1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4law2"]
 texture = ExtResource("3_4o46f")
@@ -529,8 +530,108 @@ position_smoothing_speed = 10.0
 
 [node name="Collectibles Group" type="Node" parent="Scene Objects"]
 
+[node name="Collectibles" parent="Scene Objects/Collectibles Group" instance=ExtResource("5_3ogct")]
+position = Vector2(5254, 340)
+
+[node name="Collectibles2" parent="Scene Objects/Collectibles Group" instance=ExtResource("5_3ogct")]
+position = Vector2(5318, 339)
+
+[node name="Collectibles3" parent="Scene Objects/Collectibles Group" instance=ExtResource("5_3ogct")]
+position = Vector2(5609, 192)
+
+[node name="Collectibles4" parent="Scene Objects/Collectibles Group" instance=ExtResource("5_3ogct")]
+position = Vector2(5771, 250)
+
+[node name="Collectibles5" parent="Scene Objects/Collectibles Group" instance=ExtResource("5_3ogct")]
+position = Vector2(5899, 306)
+
+[node name="Collectibles6" parent="Scene Objects/Collectibles Group" instance=ExtResource("5_3ogct")]
+position = Vector2(4991, 100)
+
+[node name="Collectibles7" parent="Scene Objects/Collectibles Group" instance=ExtResource("5_3ogct")]
+position = Vector2(4921, 99)
+
+[node name="Collectibles8" parent="Scene Objects/Collectibles Group" instance=ExtResource("5_3ogct")]
+position = Vector2(4575, 25)
+
+[node name="Collectibles9" parent="Scene Objects/Collectibles Group" instance=ExtResource("5_3ogct")]
+position = Vector2(4640, 23)
+
+[node name="Collectibles10" parent="Scene Objects/Collectibles Group" instance=ExtResource("5_3ogct")]
+position = Vector2(4379, 282)
+
+[node name="Collectibles11" parent="Scene Objects/Collectibles Group" instance=ExtResource("5_3ogct")]
+position = Vector2(4220, 51)
+
+[node name="Collectibles12" parent="Scene Objects/Collectibles Group" instance=ExtResource("5_3ogct")]
+position = Vector2(3935, 384)
+
+[node name="Collectibles13" parent="Scene Objects/Collectibles Group" instance=ExtResource("5_3ogct")]
+position = Vector2(3439, 452)
+
+[node name="Collectibles14" parent="Scene Objects/Collectibles Group" instance=ExtResource("5_3ogct")]
+position = Vector2(3410, 82)
+
+[node name="Collectibles15" parent="Scene Objects/Collectibles Group" instance=ExtResource("5_3ogct")]
+position = Vector2(3412, 12)
+
+[node name="Collectibles16" parent="Scene Objects/Collectibles Group" instance=ExtResource("5_3ogct")]
+position = Vector2(2794, 254)
+
+[node name="Collectibles17" parent="Scene Objects/Collectibles Group" instance=ExtResource("5_3ogct")]
+position = Vector2(2836, 171)
+
+[node name="Collectibles18" parent="Scene Objects/Collectibles Group" instance=ExtResource("5_3ogct")]
+position = Vector2(2891, 252)
+
+[node name="Collectibles19" parent="Scene Objects/Collectibles Group" instance=ExtResource("5_3ogct")]
+position = Vector2(2095, 408)
+
+[node name="Collectibles20" parent="Scene Objects/Collectibles Group" instance=ExtResource("5_3ogct")]
+position = Vector2(1995, 364)
+
+[node name="Collectibles21" parent="Scene Objects/Collectibles Group" instance=ExtResource("5_3ogct")]
+position = Vector2(1878, 221)
+
+[node name="Collectibles22" parent="Scene Objects/Collectibles Group" instance=ExtResource("5_3ogct")]
+position = Vector2(2044, 54)
+
+[node name="Collectibles23" parent="Scene Objects/Collectibles Group" instance=ExtResource("5_3ogct")]
+position = Vector2(2128, 48)
+
+[node name="Collectibles24" parent="Scene Objects/Collectibles Group" instance=ExtResource("5_3ogct")]
+position = Vector2(1398, 248)
+
+[node name="Collectibles25" parent="Scene Objects/Collectibles Group" instance=ExtResource("5_3ogct")]
+position = Vector2(1157, 60)
+
+[node name="Collectibles26" parent="Scene Objects/Collectibles Group" instance=ExtResource("5_3ogct")]
+position = Vector2(1636, 153)
+
+[node name="Collectibles27" parent="Scene Objects/Collectibles Group" instance=ExtResource("5_3ogct")]
+position = Vector2(849, 39)
+
+[node name="Collectibles28" parent="Scene Objects/Collectibles Group" instance=ExtResource("5_3ogct")]
+position = Vector2(741, 201)
+
+[node name="Collectibles29" parent="Scene Objects/Collectibles Group" instance=ExtResource("5_3ogct")]
+position = Vector2(648, 343)
+
+[node name="Collectibles30" parent="Scene Objects/Collectibles Group" instance=ExtResource("5_3ogct")]
+position = Vector2(479, 246)
+
+[node name="Collectibles31" parent="Scene Objects/Collectibles Group" instance=ExtResource("5_3ogct")]
+position = Vector2(236, 348)
+
+[node name="Collectibles32" parent="Scene Objects/Collectibles Group" instance=ExtResource("5_3ogct")]
+position = Vector2(-46, 221)
+
+[node name="Collectibles33" parent="Scene Objects/Collectibles Group" instance=ExtResource("5_3ogct")]
+position = Vector2(-330, 343)
+
 [node name="Finish" parent="Scene Objects" instance=ExtResource("6_e4hsv")]
 position = Vector2(6494, 265)
+target_level = ExtResource("7_68pk1")
 
 [node name="UI" type="CanvasLayer" parent="."]
 
@@ -552,102 +653,3 @@ theme_override_font_sizes/font_size = 55
 text = "Points : 0"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="Collectibles" parent="." instance=ExtResource("5_3ogct")]
-position = Vector2(5254, 340)
-
-[node name="Collectibles2" parent="." instance=ExtResource("5_3ogct")]
-position = Vector2(5318, 339)
-
-[node name="Collectibles3" parent="." instance=ExtResource("5_3ogct")]
-position = Vector2(5609, 192)
-
-[node name="Collectibles4" parent="." instance=ExtResource("5_3ogct")]
-position = Vector2(5771, 250)
-
-[node name="Collectibles5" parent="." instance=ExtResource("5_3ogct")]
-position = Vector2(5899, 306)
-
-[node name="Collectibles6" parent="." instance=ExtResource("5_3ogct")]
-position = Vector2(4991, 100)
-
-[node name="Collectibles7" parent="." instance=ExtResource("5_3ogct")]
-position = Vector2(4921, 99)
-
-[node name="Collectibles8" parent="." instance=ExtResource("5_3ogct")]
-position = Vector2(4575, 25)
-
-[node name="Collectibles9" parent="." instance=ExtResource("5_3ogct")]
-position = Vector2(4640, 23)
-
-[node name="Collectibles10" parent="." instance=ExtResource("5_3ogct")]
-position = Vector2(4379, 282)
-
-[node name="Collectibles11" parent="." instance=ExtResource("5_3ogct")]
-position = Vector2(4220, 51)
-
-[node name="Collectibles12" parent="." instance=ExtResource("5_3ogct")]
-position = Vector2(3935, 384)
-
-[node name="Collectibles13" parent="." instance=ExtResource("5_3ogct")]
-position = Vector2(3439, 452)
-
-[node name="Collectibles14" parent="." instance=ExtResource("5_3ogct")]
-position = Vector2(3410, 82)
-
-[node name="Collectibles15" parent="." instance=ExtResource("5_3ogct")]
-position = Vector2(3412, 12)
-
-[node name="Collectibles16" parent="." instance=ExtResource("5_3ogct")]
-position = Vector2(2794, 254)
-
-[node name="Collectibles17" parent="." instance=ExtResource("5_3ogct")]
-position = Vector2(2836, 171)
-
-[node name="Collectibles18" parent="." instance=ExtResource("5_3ogct")]
-position = Vector2(2891, 252)
-
-[node name="Collectibles19" parent="." instance=ExtResource("5_3ogct")]
-position = Vector2(2095, 408)
-
-[node name="Collectibles20" parent="." instance=ExtResource("5_3ogct")]
-position = Vector2(1995, 364)
-
-[node name="Collectibles21" parent="." instance=ExtResource("5_3ogct")]
-position = Vector2(1878, 221)
-
-[node name="Collectibles22" parent="." instance=ExtResource("5_3ogct")]
-position = Vector2(2044, 54)
-
-[node name="Collectibles23" parent="." instance=ExtResource("5_3ogct")]
-position = Vector2(2128, 48)
-
-[node name="Collectibles24" parent="." instance=ExtResource("5_3ogct")]
-position = Vector2(1398, 248)
-
-[node name="Collectibles25" parent="." instance=ExtResource("5_3ogct")]
-position = Vector2(1157, 60)
-
-[node name="Collectibles26" parent="." instance=ExtResource("5_3ogct")]
-position = Vector2(1636, 153)
-
-[node name="Collectibles27" parent="." instance=ExtResource("5_3ogct")]
-position = Vector2(849, 39)
-
-[node name="Collectibles28" parent="." instance=ExtResource("5_3ogct")]
-position = Vector2(741, 201)
-
-[node name="Collectibles29" parent="." instance=ExtResource("5_3ogct")]
-position = Vector2(648, 343)
-
-[node name="Collectibles30" parent="." instance=ExtResource("5_3ogct")]
-position = Vector2(479, 246)
-
-[node name="Collectibles31" parent="." instance=ExtResource("5_3ogct")]
-position = Vector2(236, 348)
-
-[node name="Collectibles32" parent="." instance=ExtResource("5_3ogct")]
-position = Vector2(-46, 221)
-
-[node name="Collectibles33" parent="." instance=ExtResource("5_3ogct")]
-position = Vector2(-330, 343)
