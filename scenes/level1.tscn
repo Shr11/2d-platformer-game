@@ -1,13 +1,12 @@
-[gd_scene load_steps=11 format=3 uid="uid://c0wnpom5dlvn7"]
+[gd_scene load_steps=10 format=3 uid="uid://c0wnpom5dlvn7"]
 
 [ext_resource type="Script" path="res://scenes/game_manager.gd" id="1_7lu6b"]
-[ext_resource type="Texture2D" uid="uid://cfvh2nuyr811w" path="res://9259351.jpg" id="2_qhth8"]
-[ext_resource type="Texture2D" uid="uid://4or647l3e3bh" path="res://Terrain (16x16).png" id="3_ssm7g"]
+[ext_resource type="Texture2D" uid="uid://cfvh2nuyr811w" path="res://assets/9259351.jpg" id="2_qhth8"]
+[ext_resource type="Texture2D" uid="uid://4or647l3e3bh" path="res://assets/Terrain (16x16).png" id="3_ssm7g"]
 [ext_resource type="PackedScene" uid="uid://cdk1w7pbuac8n" path="res://scenes/main_character.tscn" id="4_mkiee"]
 [ext_resource type="PackedScene" uid="uid://dkbuv4xdhbalt" path="res://scenes/collectibles.tscn" id="5_0upvj"]
 [ext_resource type="PackedScene" uid="uid://b4kg6nnbrc7yj" path="res://scenes/finish.tscn" id="6_5cw1l"]
 [ext_resource type="PackedScene" uid="uid://dvimwilbnp0f1" path="res://scenes/level2.tscn" id="7_sju58"]
-[ext_resource type="AudioStream" uid="uid://cimusg2piajml" path="res://chilly_oriental_feeling_with_laser_shots_c64_style.mp3" id="8_3o3k6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4law2"]
 texture = ExtResource("3_ssm7g")
@@ -491,10 +490,10 @@ script = ExtResource("1_7lu6b")
 
 [node name="TextureRect" type="TextureRect" parent="Scene Objects"]
 texture_filter = 1
-offset_left = -10.0
-offset_top = -373.0
-offset_right = 6643.0
-offset_bottom = 1627.0
+offset_left = 469.0
+offset_top = -397.0
+offset_right = 7122.0
+offset_bottom = 1603.0
 texture = ExtResource("2_qhth8")
 stretch_mode = 1
 
@@ -663,8 +662,3 @@ theme_override_font_sizes/font_size = 55
 text = "Points : 0"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("8_3o3k6")
-volume_db = -20.0
-autoplay = true

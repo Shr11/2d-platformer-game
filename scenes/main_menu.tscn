@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://2ao3n02jnopy"]
 
-[ext_resource type="Texture2D" uid="uid://cfvh2nuyr811w" path="res://9259351.jpg" id="1_3d86w"]
 [ext_resource type="Script" path="res://scenes/main_menu.gd" id="1_64ftf"]
-[ext_resource type="Texture2D" uid="uid://cg8cffpwd10lp" path="res://cooltext453164542498457.png" id="2_qp3g6"]
+[ext_resource type="Texture2D" uid="uid://cfvh2nuyr811w" path="res://assets/9259351.jpg" id="2_e472p"]
+[ext_resource type="Texture2D" uid="uid://cg8cffpwd10lp" path="res://assets/cooltext453164542498457.png" id="2_qp3g6"]
 
 [node name="MainMenu" type="Node"]
 script = ExtResource("1_64ftf")
@@ -14,7 +14,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_3d86w")
+texture = ExtResource("2_e472p")
 stretch_mode = 1
 
 [node name="TextureRect" type="TextureRect" parent="."]

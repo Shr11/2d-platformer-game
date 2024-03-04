@@ -1,7 +1,8 @@
-[gd_scene load_steps=22 format=3 uid="uid://dkbuv4xdhbalt"]
+[gd_scene load_steps=23 format=3 uid="uid://dkbuv4xdhbalt"]
 
 [ext_resource type="Script" path="res://scenes/collectibles.gd" id="1_fydy4"]
-[ext_resource type="Texture2D" uid="uid://d4e5jxmbnso5n" path="res://Strawberry.png" id="1_vx1rp"]
+[ext_resource type="Texture2D" uid="uid://d4e5jxmbnso5n" path="res://assets/Strawberry.png" id="1_vx1rp"]
+[ext_resource type="AudioStream" uid="uid://cimusg2piajml" path="res://assets/sound/chilly_oriental_feeling_with_laser_shots_c64_style.mp3" id="3_byobs"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f8jhi"]
 atlas = ExtResource("1_vx1rp")
@@ -147,5 +148,10 @@ frame_progress = 0.173657
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(451, 119)
 shape = SubResource("CircleShape2D_xx4j8")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_byobs")
+volume_db = -20.0
+autoplay = true
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
