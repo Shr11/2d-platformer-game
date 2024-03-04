@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://cgndkobpsh5eg"]
+
+[ext_resource type="Script" path="res://sound_fx.gd" id="1_fqdwb"]
+[ext_resource type="AudioStream" uid="uid://5qdtucx8y4sl" path="res://mixkit-arcade-game-jump-coin-216.wav" id="1_stws6"]
+
+[node name="SoundFx" type="Node"]
+script = ExtResource("1_fqdwb")
+
+[node name="ButtonClick" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_stws6")
