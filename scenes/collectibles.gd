@@ -6,5 +6,6 @@ extends Area2D
 
 func _on_body_entered(body):
 	if (body.name == "CharacterBody2D"):
+		SoundFx.button_click()
 		queue_free()
 		game_manager.add_point()

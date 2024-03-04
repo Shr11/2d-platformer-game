@@ -2,4 +2,4 @@ extends Node
 
 
 func button_click():
-	$"ButtonClick".play()
+	$"AudioStreamPlayer2D".play()
